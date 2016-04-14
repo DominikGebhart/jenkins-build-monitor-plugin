@@ -96,6 +96,11 @@ public class JobView {
     public int progress() {
         return lastBuild().progress();
     }
+    
+    @JsonProperty
+    public String healthIconUrl() {
+       return job.getBuildHealth().getIconUrl("32x32");
+    }
 
     @JsonProperty
     public String headline() {
@@ -151,6 +156,8 @@ public class JobView {
     public boolean isDisabled() {
         return ! job.isBuildable();
     }
+    
+    
 
     public boolean isRunning() {
         return lastBuild().isRunning();

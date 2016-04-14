@@ -3,18 +3,19 @@
     data-ng-style="{ 'font-size': (fontSize * settings.fontSize) + 'px'}"
     class="columns-{{ settings.numberOfColumns }}">
 
+    
     <!-- todo: fix the CSS3 progress bar 'pulse' animations so that they work with 'track by project.hashCode' -->
     <li ng-repeat="project in jobs"
         class="{{ project.status }} basic project widget"
         id="{{ project.name | slugify }}"
-    >
+    >        
         <div class="progress" style="width: {{project.progress}}%">
             <span class="value">{{project.progress}}%</span>
         </div>
 
         <header>
             <h2>
-                <a title="{{project.name}}" href="{{project.url}}">{{project.name}}</a>
+                <img src="{{project.healthIconUrl}}"/><a title="{{project.name}}" href="{{project.url}}">{{project.name}}</a>
             </h2>
             <ul class="details">
                 <li>{{ project.headline }}</li>
