@@ -167,5 +167,5 @@ angular.
                 $window.ga('send', 'event',  'Build Monitor UI',  'heartbeat');
             });
 
-            townCrier.start();
+            /* townCrier.start(); */
         }]);

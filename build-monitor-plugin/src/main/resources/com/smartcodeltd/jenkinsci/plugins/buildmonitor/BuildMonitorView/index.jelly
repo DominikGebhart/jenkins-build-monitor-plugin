@@ -104,7 +104,7 @@
                 </j:otherwise>
             </j:choose>
 
-            <footer>
+            <!-- <footer>
                 <div class="connectivity column">
                     <notifier />
                 </div>
@@ -113,7 +113,7 @@
                     version <a href="https://github.com/jan-molak/jenkins-build-monitor-plugin/releases" title="Is your Build Monitor up to date?" rel="external">${it.installation.buildMonitorVersion()}</a>
                     brought to you by <a href="http://smartcodeltd.co.uk" rel="external">Jan Molak</a>
                 </div>
-            </footer>
+            </footer> -->
 
             <script>
                 /*
