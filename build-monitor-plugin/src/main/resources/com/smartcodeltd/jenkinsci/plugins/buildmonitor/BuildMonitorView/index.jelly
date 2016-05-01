@@ -85,7 +85,7 @@
 
             <header>
                 <a class="home-link" href="${rootURL}/" title="Jenkins">Jenkins</a>
-                <h1><a href="configure" title="Configure the '${it.title}' view">${it.title}</a></h1>
+                <h1><a href="configure" title="Configure the '${it.title}' view">${it.title}  {{date | date:'HH:mm:ss'}}</a></h1>
                 <st:include page="main-settings.jelly"/>
             </header>
 

@@ -15,7 +15,7 @@
 
         <header>
             <h2>
-                <img src="{{project.healthIconUrl}}"/><a title="{{project.name}}" href="{{project.url}}">{{project.name}}</a>
+                <img ng-src="{{project.healthIconUrl}}"/><a title="{{project.name}}" href="{{project.url}}">{{project.name}}</a>
             </h2>
             <ul class="details">
                 <li>{{ project.headline }}</li>

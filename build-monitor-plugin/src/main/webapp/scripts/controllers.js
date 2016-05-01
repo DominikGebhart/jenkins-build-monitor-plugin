@@ -23,6 +23,10 @@ angular.
 
                 }, tryToRecover());
             });
+            
+            every(1000, function() {
+                $scope.date = new Date();
+            });
 
             // todo: extract the below as a configuration service, don't rely on $rootScope.settings and make the dependency explicit
             $rootScope.$watch('settings.numberOfColumns', function(newColumnCount) {
